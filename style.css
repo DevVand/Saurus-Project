@@ -43,6 +43,7 @@ nav{
     position: relative;
     width: 150px;
     height: 50px;
+    margin: 0 5px;
 }
 
 nav ul{
@@ -50,8 +51,8 @@ nav ul{
     display: flex;
 }
 
-ul li+li{
-    margin-right: 5px;
+ul li + li{
+    margin-left: 5px;
 }
 
 ul li a{
@@ -69,7 +70,8 @@ ul li a:hover{
 	height: 16px;
 	background: url('img/icon-hamburguer.svg');
 	cursor: pointer;
-	display: none;
+    display: none;
+    margin: 0 5px;
 }
 
 /*Responsive Menu*/
