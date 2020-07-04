@@ -17,6 +17,7 @@
             <li><a href="#">Taxas</a></li>
             <li><a href="#">Premiação</a></li>
         </ul>
+        <div class="hamburguer"></div>
     </nav>
 
     <header>
@@ -61,5 +62,21 @@
             <img src="img/rocket.gif">
         </div>
     </section>
+
+    <script>
+		const hamburguer = document.querySelector('.hamburguer')
+		const nav_ul = document.querySelector('ul')
+
+		hamburguer.addEventListener('click',function(){
+			if(hamburguer.classList.contains('active')){
+				hamburguer.classList.remove('active')
+				nav_ul.classList.remove('active')
+			}
+			else{
+				hamburguer.classList.add('active')
+				nav_ul.classList.add('active')
+			}
+		})
+	</script>
 </body>
 </html>
