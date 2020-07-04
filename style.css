@@ -170,17 +170,18 @@ header p{
 }
 
 /*Responsive header*/
-@media only screen and (max-width:375px){
+@media only screen and (max-width:425px){
     header h1{
         font-size: 48px;
     }
 }
+
 /*covid*/
 
 .covid{
     max-width: 940px;
     padding: 0 5px;
-    margin: 20px auto;
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -219,7 +220,7 @@ header p{
 }
 
 /*Responsive Covid*/
-@media only screen and (max-width:375px){
+@media only screen and (max-width:425px){
     .covid{
         flex-direction: column-reverse;
     }
@@ -270,9 +271,9 @@ header p{
 }
 
 /*Responsive Sistema*/
-@media only screen and (max-width:375px){
+@media only screen and (max-width:425px){
     .sistema{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse ;
     }
     .sistema .image{
         flex: 2 0 90px;
@@ -286,5 +287,62 @@ header p{
     .sistema .content h1{
         font-size: 40px;
         text-align: center;
+    }
+}
+
+/*Taxas*/
+
+.taxas{
+    max-width: 940px;
+    margin: 40px auto;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taxas h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #650dff;
+}
+
+.taxas .content{   
+    flex: 1 0 425px;
+}
+
+.taxas .content .tabela img{
+    margin: 0  0 0 auto;
+}   
+
+.taxas .image{
+    flex: 2 0 90px;
+    padding-top:50px;
+}
+
+.taxas .image p{
+    text-align: center;
+    width: 316.67px;
+    font-size: 250px;
+    font-weight: 400;
+    background-color: rgba(146,96,191,0.5);
+    color: rgb(146,96,191);
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:425px){
+    .taxas{
+        flex-direction: column-reverse;
+    }
+    .taxas .image{
+        width: 90%;
+        padding-bottom: 40px;
+    }
+    .taxas .image p{
+        width: 100%;
     }
 }
