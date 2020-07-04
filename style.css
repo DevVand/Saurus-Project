@@ -346,3 +346,70 @@ header p{
         width: 100%;
     }
 }
+
+/*Premiação*/
+
+.premiacao{
+    max-width: 940px;
+    margin: 40px auto;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.premiacao h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ff783e;;
+}
+
+.premiacao .content{
+    flex: 1 0 425px;
+}
+
+.premiacao .image{
+    flex: 2 0 90px;
+    padding:40px 0 0 50px;
+}
+
+#premiacao .image img{
+    height: 316.67px;
+    border-radius: 50%;
+}
+
+.premiacao .tabela{
+    padding: 20px 0 10px 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 38px 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.tabela p{
+    padding: 5px;
+    font-size: 24px;
+    color: #ff783e;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f6f8f7;
+    border-radius: 10px;
+}
+
+.tabela .num1,.tabela .num2{
+    border-radius: 50%;
+    background-color: #ff783e;
+    color:#f6f8f7;;
+}
+/*respondivo premiação*/
+
+@media only screen and (max-width:425px){
+    .premiacao{
+        flex-direction: column-reverse ;
+    }
+    .premiacao .image{
+        flex: 2 0 90px;
+        padding: 20px 0;
+    }
+}
