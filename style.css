@@ -43,7 +43,6 @@ nav{
     position: relative;
     width: 150px;
     height: 50px;
-    margin-left:5px;
 }
 
 nav ul{
@@ -51,8 +50,8 @@ nav ul{
     display: flex;
 }
 
-ul li{
-    margin: 0 5px;
+ul li+li{
+    margin-right: 5px;
 }
 
 ul li a{
@@ -65,11 +64,52 @@ ul li a{
 ul li a:hover{
     border-bottom: 1px solid rgb(146,96,191);
 }
+.hamburguer{
+	width: 24px;
+	height: 16px;
+	background: url('img/icon-hamburguer.svg');
+	cursor: pointer;
+	display: none;
+}
 
 /*Responsive Menu*/
-@media only screen and (max-width:375px){
+@media only screen and (max-width:425px){
+    .hamburguer{
+		display: block;
+    }
+    
     header h1{
         font-size: 48px;
+    }
+
+    nav ul{
+		width: 100%;
+        position: absolute;
+        top: 71px;
+		display: none;
+		margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+		font-weight:bold;
+		letter-spacing: .1em;
+		border-radius: 5px;
+		background:rgba(0, 0, 0, 0.2);
+	}
+
+	.hamburguer.active{
+		display: block;
+		width:20px;
+        height: 20px;
+		background: url('img/icon-close.svg')
+	}
+
+	ul.active{
+		display: flex;
+    }
+
+    nav ul li a:hover{
+        color: darkgray;
+        border: darkgrey;
     }
 }
 
@@ -78,7 +118,7 @@ header{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('/img/93c6aaa4424c468db1c9f7904eb400d8.gif') no-repeat;
+    background: url('img/93c6aaa4424c468db1c9f7904eb400d8.gif') no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
